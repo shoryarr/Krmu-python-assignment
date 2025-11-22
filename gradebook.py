@@ -1,12 +1,11 @@
-# GradeBook Analyzer - Super Basic Version
-# Name: [Your Name]
+# GradeBook Analyzer 
+# Name: [Shorya Sharma]
 # Date: 22 Nov 2025
+# Roll no: 2501730021
 
-import csv # Still needed for CSV
-# Removing 'statistics' to force manual calculation of median
-# Note: This is an easier method than implementing a sorting algorithm
+import csv 
 
-# --- Data Input Function (Simplified) ---
+
 def get_data(choice):
     marks = {}
     if choice == '1':
@@ -44,7 +43,7 @@ def get_data(choice):
             
     return marks
 
-# --- Main Logic / CLI Loop ---
+
 
 def main():
     print("--- Basic GradeBook Analyzer ---")
@@ -64,7 +63,7 @@ def main():
                 print("No valid data loaded. Try again.")
             continue
 
-        # Convert dictionary values to a list for easier calculations (Task 3)
+       
         scores_list = list(marks_data.values())
         
         print("\n" + "*"*25)
